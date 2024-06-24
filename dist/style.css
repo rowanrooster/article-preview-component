@@ -1,0 +1,110 @@
+:root {
+  --d-blue-1: hsl(214, 17%, 51%);
+  --d-blue-2: hsl(217, 19%, 35%);
+  --l-blue-1: hsl(210, 46%, 95%);
+  --l-blue-2: hsl(212, 23%, 69%);
+  --white: hsl(0, 0%, 100%);
+}
+
+*, *::before, *::after {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Manrope", sans-serif;
+  font-size: 0.813rem;
+  line-height: 1.5;
+  font-weight: 500;
+  background-color: var(--l-blue-1);
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+h1 {
+  line-height: 1.4;
+  margin: 0;
+}
+
+h3, p {
+  margin: 0;
+}
+
+a, a:hover {
+  text-decoration: none;
+}
+
+ul {
+  margin: 0;
+  padding: 0;
+}
+
+img {
+  display: block;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+}
+.wrapper .article-img {
+  width: 17.8125rem;
+  height: 17.5rem;
+  margin: 0;
+  padding: 0;
+  border-radius: 10px 0 0 10px;
+  background-image: url(../assets/images/drawers.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center;
+}
+.wrapper .article-content {
+  width: 27.8125rem;
+  min-height: 17.5rem;
+  padding: 30px 30px;
+  border-radius: 0 10px 10px 0;
+  background-color: var(--white);
+}
+.wrapper .article-content h1 {
+  margin-bottom: 15px;
+}
+.wrapper .article-content .article-author {
+  margin-top: 20px;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+}
+.wrapper .article-content .article-author .author {
+  display: flex;
+}
+.wrapper .article-content .article-author .author img {
+  margin-right: 15px;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+}
+.wrapper .article-content .article-author .author .author-details {
+  display: flex;
+  flex-direction: column;
+  min-width: 80%;
+}
+.wrapper .article-content .article-author .share-box {
+  display: none;
+}
+.wrapper .article-content .article-author .share {
+  position: relative;
+  padding: 11px 10px;
+  border-radius: 50%;
+  background-color: var(--l-blue-1);
+}
+.wrapper .article-content .article-author .share:hover {
+  background-color: var(--d-blue-2);
+}
+.wrapper .article-content .article-author .share:hover > img {
+  filter: invert(100%) sepia(62%) saturate(2%) hue-rotate(4deg) brightness(110%) contrast(101%);
+}/*# sourceMappingURL=style.css.map */

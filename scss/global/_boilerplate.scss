@@ -1,0 +1,40 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: "Manrope", sans-serif;
+    font-size: 0.813rem;
+    line-height: 1.5;
+    font-weight: 500;
+    background-color: var(--l-blue-1);
+
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    line-height: 1.4;
+    margin: 0;
+}
+
+h3, p {
+    margin: 0;
+}
+
+a, a:hover {
+    text-decoration: none;
+}
+
+ul {
+    margin: 0;
+    padding: 0;
+}
+
+img {
+    display: block;
+}
