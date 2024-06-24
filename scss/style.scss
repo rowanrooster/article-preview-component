@@ -41,8 +41,8 @@
 
                 img {
                     margin-right: 15px;
-                    width: 40px;
-                    height: 40px;
+                    width: u.rem(40);
+                    height: u.rem(40);
                     border-radius: 20px;
                 }
                 .author-details {
@@ -68,7 +68,7 @@
             }
             .share-box {
                 display: none;
-                width: 250px;
+                width: u.rem(250);
                 padding: 15px 25px;
                 position: absolute;
                 top: -60px;
@@ -90,7 +90,13 @@
                     border-top: 7px solid var(--d-blue-2);
                 }
 
-                span { margin-right: 30px; text-transform: uppercase; letter-spacing: 5px;}
+                span {
+                    margin-right: 30px; 
+                    text-transform: uppercase; 
+                    letter-spacing: 5px; 
+                    opacity: .5;
+                }
+
                 a { margin-right: 20px;}
             }
             .fade-in {
@@ -128,8 +134,8 @@
 
                 .share-box {
                     width: 330px;
-                    padding: 30px;
-                    top: -17px;
+                    padding: 32px;
+                    top: -20px;
                     right: -20px;
                     z-index: 1;
                     border-radius: 0 0 10px 10px;
@@ -138,8 +144,8 @@
                         display: none;
                     }
 
-                    span { margin-right: 60px;}
-                    a { margin-right: 10px;}
+                    span { margin-right: 30px;}
+                    a { margin-right: 15px;}
                 }
             }
         }
