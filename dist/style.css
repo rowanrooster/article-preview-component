@@ -80,6 +80,8 @@ img {
   margin-bottom: 15px;
 }
 .wrapper .article-content .article-author {
+  position: relative;
+  z-index: 2;
   margin-top: 20px;
   display: flex;
   flex-direction: row;
@@ -100,11 +102,10 @@ img {
   flex-direction: column;
   min-width: 80%;
 }
-.wrapper .article-content .article-author .share-box {
-  display: none;
-}
 .wrapper .article-content .article-author .share {
   position: relative;
+  z-index: 5;
+  display: block;
   padding: 11px 10px;
   border-radius: 50%;
   background-color: var(--l-blue-1);
@@ -115,8 +116,52 @@ img {
 .wrapper .article-content .article-author .share:hover > img {
   filter: invert(100%) sepia(62%) saturate(2%) hue-rotate(4deg) brightness(110%) contrast(101%);
 }
+.wrapper .article-content .article-author .share-box {
+  display: none;
+  width: 250px;
+  padding: 15px 25px;
+  position: absolute;
+  top: -60px;
+  right: -110px;
+  color: var(--white);
+  border-radius: 10px;
+  background-color: var(--d-blue-2);
+}
+.wrapper .article-content .article-author .share-box::after {
+  content: "";
+  position: absolute;
+  top: 50px;
+  left: 112px;
+  width: 0;
+  height: 0;
+  border-left: 10px solid transparent;
+  border-right: 10px solid transparent;
+  border-top: 7px solid var(--d-blue-2);
+}
+.wrapper .article-content .article-author .share-box span {
+  margin-right: 30px;
+  text-transform: uppercase;
+  letter-spacing: 5px;
+}
+.wrapper .article-content .article-author .share-box a {
+  margin-right: 20px;
+}
+.wrapper .article-content .article-author .fade-in {
+  animation: fadeIn 0.2s;
+}
 
-@media screen and (max-width: 800px) {
+@keyframes fadeIn {
+  0% {
+    opacity: 0;
+  }
+  50% {
+    opacity: 0.5;
+  }
+  100% {
+    opacity: 1;
+  }
+}
+@media screen and (max-width: 900px) {
   .wrapper {
     padding: 0 30px;
     flex-direction: column;
@@ -131,5 +176,25 @@ img {
     width: 20.625rem;
     height: auto;
     border-radius: 0 0 10px 10px;
+  }
+  .wrapper .article-content .article-author {
+    margin-top: 30px;
+  }
+  .wrapper .article-content .article-author .share-box {
+    width: 330px;
+    padding: 30px;
+    top: -17px;
+    right: -20px;
+    z-index: 1;
+    border-radius: 0 0 10px 10px;
+  }
+  .wrapper .article-content .article-author .share-box::after {
+    display: none;
+  }
+  .wrapper .article-content .article-author .share-box span {
+    margin-right: 60px;
+  }
+  .wrapper .article-content .article-author .share-box a {
+    margin-right: 10px;
   }
 }/*# sourceMappingURL=style.css.map */
