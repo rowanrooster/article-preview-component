@@ -16,6 +16,7 @@ body {
   font-size: 0.813rem;
   line-height: 1.5;
   font-weight: 500;
+  color: var(--d-blue-1);
   background-color: var(--l-blue-1);
   min-height: 100vh;
   display: flex;
@@ -27,9 +28,15 @@ body {
 h1 {
   line-height: 1.4;
   margin: 0;
+  color: var(--d-blue-2);
 }
 
-h3, p {
+h3 {
+  margin: 0;
+  color: var(--d-blue-2);
+}
+
+p {
   margin: 0;
 }
 
@@ -65,7 +72,7 @@ img {
 .wrapper .article-content {
   width: 27.8125rem;
   min-height: 17.5rem;
-  padding: 30px 30px;
+  padding: 30px;
   border-radius: 0 10px 10px 0;
   background-color: var(--white);
 }
@@ -107,4 +114,22 @@ img {
 }
 .wrapper .article-content .article-author .share:hover > img {
   filter: invert(100%) sepia(62%) saturate(2%) hue-rotate(4deg) brightness(110%) contrast(101%);
+}
+
+@media screen and (max-width: 800px) {
+  .wrapper {
+    padding: 0 30px;
+    flex-direction: column;
+  }
+  .wrapper .article-img {
+    width: 20.625rem;
+    height: 12.5rem;
+    border-radius: 10px 10px 0 0;
+  }
+  .wrapper .article-content {
+    padding: 20px;
+    width: 20.625rem;
+    height: auto;
+    border-radius: 0 0 10px 10px;
+  }
 }/*# sourceMappingURL=style.css.map */

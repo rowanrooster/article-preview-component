@@ -21,7 +21,7 @@
     .article-content {
         width: u.rem(445);
         min-height: u.rem(280);
-        padding: 30px 30px;
+        padding: 30px;
         border-radius: 0 10px 10px 0;
         background-color: var(--white);
 
@@ -70,5 +70,22 @@
     }
 }
 
-@media screen and (max-width: 375px) {
+@media screen and (max-width: 800px) {     
+    .wrapper {
+        padding: 0 30px;
+        flex-direction: column;
+
+        .article-img {
+            width: u.rem(330);
+            height: u.rem(200);
+            border-radius: 10px 10px 0 0;
+        }        
+
+        .article-content {
+            padding: 20px;
+            width: u.rem(330);
+            height: auto;
+            border-radius: 0 0 10px 10px ;
+        }
+    }
 }

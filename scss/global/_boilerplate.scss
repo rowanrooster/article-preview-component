@@ -8,6 +8,7 @@ body {
     font-size: 0.813rem;
     line-height: 1.5;
     font-weight: 500;
+    color: var(--d-blue-1);
     background-color: var(--l-blue-1);
 
     min-height: 100vh;
@@ -20,9 +21,15 @@ body {
 h1 {
     line-height: 1.4;
     margin: 0;
+    color: var(--d-blue-2);
 }
 
-h3, p {
+h3 {
+    margin: 0;
+    color: var(--d-blue-2);
+} 
+
+p {
     margin: 0;
 }
 
